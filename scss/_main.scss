@@ -1,0 +1,47 @@
+@mixin townTexto {
+	color: $color;
+
+}
+
+@for $i from 1 through 10 {
+	.columna-#{$i} {
+		width: (80vw/10)*$i;
+		background-color: $cream;
+		display: inline-block;
+		justify-content: center;
+		p {
+			display: inline-block;
+			padding: 10px;
+			width: (80vw/10)*$i!important;
+		}
+	}
+}
+
+@each $t in $towns {
+	.ciudad-#{$t}{
+		background-image: url('../media/#{$t}.png');
+		background-size: cover;
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.towns {
+	max-width: 80vw;
+	margin: 20px auto;
+	display: flex;
+}
+
+.townInfo {
+	background-color: $dark-brown;
+	padding: 10px 20px 10px 20px;
+	color: white!important;
+
+	strong {
+		font-family: Georgia, serif;
+		font-weight: 700;
+		color: #FCDCB6;
+		font-size: 1.5rem;
+	}
+}

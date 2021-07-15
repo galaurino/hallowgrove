@@ -1,0 +1,300 @@
+body {
+	min-height: 100vw;
+	background: linear-gradient(#fff3e5 ,#FCDCB6);
+}
+
+h1 {
+	color: #aa511d;
+	border-bottom: 3px solid #FCDCB6;
+	padding-left: 20px;
+	font-family: Georgia, serif;
+}
+
+#bannerHallowgrove {
+	display: block;
+	min-height: 400px;
+	height: 100vh;
+	background-size: cover;
+	background-image: url("../media/Portada.png");
+	margin-bottom: 20px;
+}
+
+#bannerHallowgrove img {
+	height: 100%;
+	display: block;
+}
+
+#bannerHallowgrove h1 {
+	border: 0;
+	font-size: 5rem;
+}
+
+#bannerHallowgrove p {
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+	#bannerHallowgrove h1 {
+			font-size: 3rem;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	#bannerHallowgrove p{
+			font-size: 1rem;
+		}
+	}
+
+#intro {
+	margin-bottom: 20px;
+}
+
+#introHallowgrove {
+	background-color: #fff3e5;
+	padding: 20px;
+}
+
+#faqHallowgrove {
+	padding: 10px;
+}
+
+#disclaimerHallowgrove {
+	background-color: #470101;
+	padding: 20px;
+}
+
+#info p {
+	color: #3d0606;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 15px;
+	width: 70vw;
+	margin: 20px auto 10px auto;
+}
+
+.introProyecto {
+	width: 300px!important;
+	color: #aa511d;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: 500;
+	text-align: center;
+	background-color: #FCDCB6;
+	margin: 10px auto 10px auto;
+	padding: 5px;
+	border: 2px solid #aa511d;
+}
+
+#portada {
+	height: 100vh
+	display: block;
+}
+
+.portadaImg {
+	height: auto;
+	width: 100%;
+}
+
+#npcs table {
+	color: #3d0606;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	background-color: #FCDCB6;
+	margin: 10px auto 10px auto;
+	width: 80vw;
+}
+
+#npcs table td {
+	padding: 5px;
+}
+
+#npcs table b {
+	color: #470101;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: 700;
+	display: block;
+	border: 2px solid #aa511d;
+}
+
+.tablaTitulo {
+	background-color: #fff;
+}
+
+#npcs table ul {
+	color: #aa511d;
+	text-align: left;
+	list-style-type: circle;
+}
+
+#npcs table ol {
+	color: #a00c0c;
+	text-align: left;
+	list-style-type: decimal-leading-zero;
+}
+
+.npcImagen {
+	width: 20vw;
+	padding: 0px!important;
+	transition: background 2s;
+	background: linear-gradient(#aa511d, #FCDCB6);
+}
+
+.npcImagen img {
+	width: 20vw;
+}
+
+#menu a {
+	color: #aa511d!important;
+	font-size: 15px;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: 500;
+}
+
+#menu ul {
+	min-width: 50vw;
+	max-width: 60vw;
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+.mundoImagen {
+	display: block;
+	width: 80vw;
+	margin: 20px auto 20px auto;
+}
+
+#join label {
+	color: #470101;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-weight: 500;
+}
+
+.loremIpsum {
+	width: 80vw;
+	margin: 5px auto 10px auto;
+}
+
+.imagenSticky {
+	width: 200px!important;
+	position: sticky;
+	top: 200px;
+	left: 20px;
+}
+
+.gridNPCs {
+	display:  grid;
+	width: 80vw;
+	height: auto;
+	grid-template-areas: "img" "info" "texto";
+	margin: 20px auto 20px auto;
+	color: #3d0606;
+	font-family: 'Hind Siliguri', sans-serif;
+	font-size: 15px;
+	line-height: 20px;
+	justify-content: center;
+	border: 2px solid black;
+}
+
+.imagenNPC {
+	grid-area: img;
+	max-width: 80vw;
+	max-height: 500px;
+	display: block;
+	overflow: hidden;
+	margin: 0 auto 0 auto;
+	background: linear-gradient(#aa511d, #FCDCB6)
+}
+
+.infoNPC {
+	grid-area: info;
+	background-color: #470101;
+	padding: 10px 20px 10px 20px;
+	color: white;
+}
+
+.infoNPC strong {
+	font-family: Georgia, serif;
+	font-weight: 700;
+	color: #FCDCB6;
+	font-size: 1.5rem;
+}
+
+.textoNPC {
+	grid-area: texto;
+	padding: 15px;
+	background-color: #fff3e5;
+	color: #aa511d;
+}
+
+@media only screen and (min-width: 1100px)
+{
+	.gridNPCs {
+		display:  grid;
+		width: 80vw;
+		grid-template-areas: "img info info" "img texto texto" "img texto texto";
+		grid-template-rows: auto 1fr 2fr;
+	}
+}
+
+.inventarioSavant {
+	min-height: 280px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-content: stretch;
+	align-items: center;
+	margin: 20px;
+}
+
+.inventarioSavant li {
+	list-style-type: none;
+	width: 80px;
+	height: 40px;
+	background-color: white;
+	font-size: 13px;
+	text-align: center;
+	padding: 20px 10px 20px 10px;
+	border: 1px solid #a00c0c;
+	font-weight: 500;
+	transition: font-size 2s, background-color 2s, color 2s
+}
+
+.inventarioSavant li:hover {
+	font-size: 1em;
+	background-color: #FFF3E5;
+	color: #470101;
+}
+
+#uneteJuego {
+	width: 300px;
+	padding: 1em;
+	margin: 20px;
+	border: 1px solid #aa511d!important;
+}
+
+#uneteFaq {
+	padding: 1em;
+}
+
+#unete textarea {
+	max-width: 300px;
+	height: 150px;
+	display: block;
+	margin-top: 20px;
+}
+
+#uneteJuego	.uneteFormato {
+	display: block;
+	margin: 3px;
+	max-width: 300px;
+}
+
+#uneteJuego .unetePreferencia {
+	display: inline;
+}
+
+.navbar-brand {
+	font-weight: 700!important;
+}

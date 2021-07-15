@@ -1,0 +1,553 @@
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-1 {
+  width: 8vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-1 p {
+  display: inline-block;
+  padding: 10px;
+  width: 8vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-2 {
+  width: 16vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-2 p {
+  display: inline-block;
+  padding: 10px;
+  width: 16vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-3 {
+  width: 24vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-3 p {
+  display: inline-block;
+  padding: 10px;
+  width: 24vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-4 {
+  width: 32vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-4 p {
+  display: inline-block;
+  padding: 10px;
+  width: 32vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-5 {
+  width: 40vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-5 p {
+  display: inline-block;
+  padding: 10px;
+  width: 40vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-6 {
+  width: 48vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-6 p {
+  display: inline-block;
+  padding: 10px;
+  width: 48vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-7 {
+  width: 56vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-7 p {
+  display: inline-block;
+  padding: 10px;
+  width: 56vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-8 {
+  width: 64vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-8 p {
+  display: inline-block;
+  padding: 10px;
+  width: 64vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-9 {
+  width: 72vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-9 p {
+  display: inline-block;
+  padding: 10px;
+  width: 72vw !important;
+}
+
+/* line 7, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-10 {
+  width: 80vw;
+  background-color: #fff3e5;
+  display: inline-block;
+  justify-content: center;
+}
+
+/* line 12, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.columna-10 p {
+  display: inline-block;
+  padding: 10px;
+  width: 80vw !important;
+}
+
+/* line 21, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.ciudad-Granjas {
+  background-image: url("../media/Granjas.png");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.ciudad-Residencias {
+  background-image: url("../media/Residencias.png");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.ciudad-Fabricas {
+  background-image: url("../media/Fabricas.png");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.ciudad-Minas {
+  background-image: url("../media/Minas.png");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 21, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.ciudad-Naturaleza {
+  background-image: url("../media/Naturaleza.png");
+  background-size: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 30, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.towns {
+  max-width: 80vw;
+  margin: 20px auto;
+  display: flex;
+}
+
+/* line 36, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.townInfo {
+  background-color: #3d0606;
+  padding: 10px 20px 10px 20px;
+  color: white !important;
+}
+
+/* line 41, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_main.scss */
+.townInfo strong {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: #FCDCB6;
+  font-size: 1.5rem;
+}
+
+/* line 1, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/_fonts.scss */
+h2 {
+  font-size: 25px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+}
+
+/* line 5, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+body {
+  min-height: 100vw;
+  background: linear-gradient(#fff3e5, #FCDCB6);
+}
+
+/* line 10, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+h1 {
+  color: #aa511d;
+  border-bottom: 3px solid #FCDCB6;
+  padding-left: 20px;
+  font-family: Georgia, serif;
+}
+
+/* line 17, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#bannerHallowgrove {
+  display: block;
+  min-height: 400px;
+  height: 100vh;
+  background-size: cover;
+  background-image: url("../media/Portada.png");
+  margin-bottom: 20px;
+}
+
+/* line 26, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#bannerHallowgrove img {
+  height: 100%;
+  display: block;
+}
+
+/* line 31, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#bannerHallowgrove h1 {
+  border: 0;
+  font-size: 5rem;
+}
+
+/* line 36, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#bannerHallowgrove p {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 800px) {
+  /* line 42, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+  #bannerHallowgrove h1 {
+    font-size: 3rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* line 48, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+  #bannerHallowgrove p {
+    font-size: 1rem;
+  }
+}
+
+/* line 53, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#intro {
+  margin-bottom: 20px;
+}
+
+/* line 57, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#introHallowgrove {
+  background-color: #fff3e5;
+  padding: 20px;
+}
+
+/* line 62, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#faqHallowgrove {
+  padding: 10px;
+}
+
+/* line 66, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#disclaimerHallowgrove {
+  background-color: #470101;
+  padding: 20px;
+}
+
+/* line 71, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#info p {
+  color: #3d0606;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 15px;
+  width: 70vw;
+  margin: 20px auto 10px auto;
+}
+
+/* line 79, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.introProyecto {
+  width: 300px !important;
+  color: #aa511d;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+  text-align: center;
+  background-color: #FCDCB6;
+  margin: 10px auto 10px auto;
+  padding: 5px;
+  border: 2px solid #aa511d;
+}
+
+/* line 91, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#portada {
+  height: 100vh;
+  display: block;
+}
+
+/* line 96, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.portadaImg {
+  height: auto;
+  width: 100%;
+}
+
+/* line 101, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#npcs table {
+  color: #3d0606;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FCDCB6;
+  margin: 10px auto 10px auto;
+  width: 80vw;
+}
+
+/* line 111, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#npcs table td {
+  padding: 5px;
+}
+
+/* line 115, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#npcs table b {
+  color: #3d0606;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 700;
+  display: block;
+  border: 2px solid #aa511d;
+}
+
+/* line 123, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#npcs table ul {
+  color: #aa511d;
+  text-align: left;
+  list-style-type: circle;
+}
+
+/* line 129, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#npcs table ol {
+  color: #a00c0c;
+  text-align: left;
+  list-style-type: decimal-leading-zero;
+}
+
+/* line 136, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.tablaTitulo {
+  background-color: #fff;
+}
+
+/* line 140, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcImagen {
+  width: 20vw;
+  padding: 0px !important;
+  transition: background 2s;
+  background: linear-gradient(#aa511d, #FCDCB6);
+}
+
+/* line 145, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcImagen img {
+  width: 20vw;
+}
+
+/* line 150, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#menu a {
+  color: #aa511d !important;
+  font-size: 15px;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+}
+
+/* line 157, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.mundoImagen {
+  display: block;
+  width: 80vw;
+  margin: 20px auto 20px auto;
+}
+
+/* line 163, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#join label {
+  color: #3d0606;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-weight: 500;
+}
+
+/* line 169, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.loremIpsum {
+  width: 80vw;
+  margin: 5px auto 10px auto;
+}
+
+/* line 174, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcs__grid {
+  display: grid;
+  width: 80vw;
+  height: auto;
+  grid-template-areas: "img" "info" "texto";
+  margin: 20px auto 20px auto;
+  color: #3d0606;
+  font-family: 'Hind Siliguri', sans-serif;
+  font-size: 15px;
+  line-height: 20px;
+  justify-content: center;
+  border: 2px solid black;
+}
+
+/* line 188, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcs__imagen {
+  grid-area: img;
+  max-width: 80vw;
+  max-height: 500px;
+  display: block;
+  overflow: hidden;
+  margin: 0 auto 0 auto;
+  background: linear-gradient(#aa511d, #FCDCB6);
+}
+
+/* line 198, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcs__info {
+  grid-area: info;
+  background-color: #3d0606;
+  padding: 10px 20px 10px 20px;
+  color: white;
+}
+
+/* line 204, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcs__info strong {
+  font-family: Georgia, serif;
+  font-weight: 700;
+  color: #FCDCB6;
+  font-size: 1.5rem;
+}
+
+/* line 212, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.npcs__texto {
+  grid-area: texto;
+  padding: 15px;
+  background-color: #fff3e5;
+  color: #aa511d;
+}
+
+@media only screen and (min-width: 1100px) {
+  /* line 221, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+  .gridNPCs {
+    display: grid;
+    width: 80vw;
+    grid-template-areas: "img info info" "img texto texto" "img texto texto";
+    grid-template-rows: auto 1fr 2fr;
+  }
+}
+
+/* line 229, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.inventarioSavant {
+  min-height: 280px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: stretch;
+  align-items: center;
+  margin: 20px;
+}
+
+/* line 239, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.inventarioSavant li {
+  list-style-type: none;
+  width: 80px;
+  height: auto;
+  background-color: white;
+  font-size: 13px;
+  text-align: center;
+  padding: 20px 10px 20px 10px;
+  border: 1px solid #aa511d;
+  font-weight: 500;
+  transition: font-size 2s, background-color 2s, color 2s;
+}
+
+/* line 252, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.inventarioSavant li:hover {
+  font-size: 1em;
+  background-color: #fff3e5;
+  color: #3d0606;
+}
+
+/* line 258, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#unete__juego {
+  width: 300px;
+  padding: 1em;
+  margin: 20px;
+  border: 1px solid #aa511d !important;
+}
+
+/* line 265, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#unete__faq {
+  padding: 1em;
+}
+
+/* line 269, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#unete textarea {
+  max-width: 300px;
+  height: 150px;
+  display: block;
+  margin-top: 20px;
+}
+
+/* line 276, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#unete__juego .unete__formato {
+  display: block;
+  margin: 3px;
+  max-width: 300px;
+}
+
+/* line 282, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+#unete__juego .unete__preferencia {
+  display: inline;
+}
+
+/* line 286, ../../../Documents/coderhouse/Desarrollo Web/Clase 13/Idea+Laurino/scss/estilos.scss */
+.navbar-brand {
+  font-weight: 700 !important;
+}
+
+/*# sourceMappingURL=estilos.css.map */
