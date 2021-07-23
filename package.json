@@ -1,0 +1,26 @@
+{
+  "name": "hallowgrove",
+  "version": "1.0.0",
+  "description": "Final para el curso de Diseño Web de Coderhouse, basado en un juego de Calabozos y Dragones.",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/estilos.scss css/estilos.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/galaurino/hallowgrove.git"
+  },
+  "author": "Giuliana Laurino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/galaurino/hallowgrove/issues"
+  },
+  "homepage": "https://github.com/galaurino/hallowgrove#readme"
+}
