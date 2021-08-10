@@ -12,17 +12,31 @@ body {
 
 #bannerHallowgrove img {
   height: 100%;
-  display: block;
-  filter: blur(5px);
-  -webkit-filter: blur(5px); }
+  display: block; }
 
 #bannerHallowgrove h1 {
   border: 0;
-  font-size: 5rem; }
+  font-size: 5rem;
+  opacity: 0;
+  animation-name: opacidad;
+  animation-delay: 1s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
 
 #bannerHallowgrove p {
   font-weight: 700;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  opacity: 0;
+  animation-name: opacidad;
+  animation-delay: 3s;
+  animation-duration: 2s;
+  animation-fill-mode: forwards; }
+
+@keyframes opacidad {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 @media only screen and (max-width: 800px) {
   #bannerHallowgrove h1 {
@@ -34,18 +48,44 @@ body {
     font-size: 1rem; } }
 
 #intro {
-  margin-bottom: 20px; }
+  width: 60vw;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-areas: "intro" "faq" "disclaimer";
+  margin: 20px auto; }
 
 #introHallowgrove {
+  width: auto;
+  grid-area: intro;
   background-color: #fff3e5;
-  padding: 20px; }
+  padding: 20px;
+  border-radius: 20px; }
+  #introHallowgrove p {
+    text-indent: 10px; }
 
 #faqHallowgrove {
-  padding: 10px; }
+  width: auto;
+  grid-area: faq;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #aa511d;
+  border-radius: 20px; }
+  #faqHallowgrove p {
+    text-indent: 10px; }
 
 #disclaimerHallowgrove {
-  background-color: #470101;
-  padding: 20px; }
+  width: auto;
+  grid-area: disclaimer;
+  color: #fff3e5;
+  background-color: #3d0606;
+  padding: 20px;
+  border-radius: 20px; }
+
+@media only screen and (min-width: 1100px) {
+  #intro {
+    width: 80vw;
+    grid-template-areas: "intro intro faq" "intro intro faq" "disclaimer disclaimer disclaimer";
+    grid-template-rows: auto; } }
 
 #info p {
   color: #3d0606;
@@ -72,35 +112,6 @@ body {
 .portadaImg {
   height: auto;
   width: 100%; }
-
-#npcs table {
-  color: #3d0606;
-  font-family: 'Hind Siliguri', sans-serif;
-  font-size: 15px;
-  line-height: 20px;
-  text-align: center;
-  background-color: #FCDCB6;
-  margin: 10px auto 10px auto;
-  width: 80vw; }
-  #npcs table td {
-    padding: 5px; }
-  #npcs table b {
-    color: #3d0606;
-    font-family: 'Hind Siliguri', sans-serif;
-    font-weight: 700;
-    display: block;
-    border: 2px solid #aa511d; }
-  #npcs table ul {
-    color: #aa511d;
-    text-align: left;
-    list-style-type: circle; }
-  #npcs table ol {
-    color: #a00c0c;
-    text-align: left;
-    list-style-type: decimal-leading-zero; }
-
-.tablaTitulo {
-  background-color: #fff; }
 
 #menu a {
   color: #aa511d !important;
@@ -197,12 +208,13 @@ body {
   color: #3d0606; }
 
 #unete__juego {
-  width: 300px;
+  min-width: 300px;
   padding: 1em;
   margin: 20px;
   border: 1px solid #aa511d !important; }
 
 #unete__faq {
+  min-width: 300px;
   padding: 1em; }
 
 #unete textarea {
@@ -222,136 +234,36 @@ body {
 .navbar-brand {
   font-weight: 700 !important; }
 
-.columna-1 {
-  width: 8vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-1 p {
-    display: inline-block;
-    padding: 10px;
-    width: 8vw !important; }
-
-.columna-2 {
-  width: 16vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-2 p {
-    display: inline-block;
-    padding: 10px;
-    width: 16vw !important; }
-
-.columna-3 {
-  width: 24vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-3 p {
-    display: inline-block;
-    padding: 10px;
-    width: 24vw !important; }
-
-.columna-4 {
-  width: 32vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-4 p {
-    display: inline-block;
-    padding: 10px;
-    width: 32vw !important; }
-
-.columna-5 {
-  width: 40vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-5 p {
-    display: inline-block;
-    padding: 10px;
-    width: 40vw !important; }
-
-.columna-6 {
-  width: 48vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-6 p {
-    display: inline-block;
-    padding: 10px;
-    width: 48vw !important; }
-
-.columna-7 {
-  width: 56vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-7 p {
-    display: inline-block;
-    padding: 10px;
-    width: 56vw !important; }
-
-.columna-8 {
-  width: 64vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-8 p {
-    display: inline-block;
-    padding: 10px;
-    width: 64vw !important; }
-
-.columna-9 {
-  width: 72vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-9 p {
-    display: inline-block;
-    padding: 10px;
-    width: 72vw !important; }
-
-.columna-10 {
-  width: 80vw;
-  background-color: #fff3e5;
-  display: inline-block;
-  justify-content: center; }
-  .columna-10 p {
-    display: inline-block;
-    padding: 10px;
-    width: 80vw !important; }
-
 .ciudad-Granjas {
-  background-image: url("../media/Granjas.png");
+  background-image: url("../media/Granjas.jpg");
   background-size: cover;
   display: block;
   width: 100%;
   height: 100%; }
 
 .ciudad-Residencias {
-  background-image: url("../media/Residencias.png");
+  background-image: url("../media/Residencias.jpg");
   background-size: cover;
   display: block;
   width: 100%;
   height: 100%; }
 
 .ciudad-Fabricas {
-  background-image: url("../media/Fabricas.png");
+  background-image: url("../media/Fabricas.jpg");
   background-size: cover;
   display: block;
   width: 100%;
   height: 100%; }
 
 .ciudad-Minas {
-  background-image: url("../media/Minas.png");
+  background-image: url("../media/Minas.jpg");
   background-size: cover;
   display: block;
   width: 100%;
   height: 100%; }
 
 .ciudad-Naturaleza {
-  background-image: url("../media/Naturaleza.png");
+  background-image: url("../media/Naturaleza.jpg");
   background-size: cover;
   display: block;
   width: 100%;
@@ -360,17 +272,48 @@ body {
 .towns {
   max-width: 80vw;
   margin: 20px auto;
-  display: flex; }
+  display: grid;
+  grid-template-areas: "img" "texto";
+  background-color: #fff3e5; }
+
+.townsRev {
+  max-width: 80vw;
+  margin: 20px auto;
+  display: grid;
+  grid-template-areas: "img" "texto";
+  background-color: #fff3e5; }
+
+.townText p {
+  padding: 10px 20px; }
+
+.townImg {
+  grid-area: img;
+  display: block;
+  width: 80vw;
+  height: 500px; }
 
 .townInfo {
   background-color: #3d0606;
   padding: 10px 20px 10px 20px;
-  color: white !important; }
+  color: white !important;
+  grid-area: texto; }
   .townInfo strong {
     font-family: Georgia, serif;
     font-weight: 700;
     color: #FCDCB6;
     font-size: 1.5rem; }
+
+@media only screen and (min-width: 1100px) {
+  .towns {
+    height: 500px;
+    grid-template-areas: "img texto";
+    grid-template-rows: 2fr 3fr; }
+  .townsRev {
+    height: 500px;
+    grid-template-areas: "texto img";
+    grid-template-rows: 2fr 3fr; }
+  .townImg {
+    width: 30vw; } }
 
 .Alquimico {
   background-image: url("../media/Alquimico.png");
@@ -436,17 +379,18 @@ body {
   height: 500px; }
 
 #razas {
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
-  align-items: stretch; }
+  align-items: stretch;
+  margin: auto; }
 
 .razasInfo {
-  width: 380px;
+  width: 400px;
   margin: 25px auto 25px auto; }
   .razasInfo .razasNombre {
-    background-color: #3d0606;
+    background-color: #aa511d;
     color: #fff3e5;
     font-size: 20px;
     height: 30px;
@@ -456,6 +400,31 @@ body {
   .razasInfo .razasTexto {
     background-color: #FCDCB6;
     padding: 10px; }
+  .razasInfo .razasFlex {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto 10px auto; }
+  .razasInfo .razasPuntos {
+    background-color: #fff3e5;
+    display: block;
+    height: 70px;
+    width: 70px;
+    text-align: center;
+    overflow: hidden; }
+    .razasInfo .razasPuntos span {
+      font-size: 18px;
+      font-weight: 700;
+      margin-top: 0;
+      padding: 0; }
+    .razasInfo .razasPuntos b {
+      font-size: 25px;
+      font-weight: 700;
+      display: block; }
+
+.clasesVideo {
+  display: flex;
+  margin: 0;
+  justify-content: center; }
 
 h1 {
   color: #aa511d;

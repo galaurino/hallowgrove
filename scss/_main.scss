@@ -15,18 +15,31 @@ body {
 #bannerHallowgrove img {
 	height: 100%;
 	display: block;
-	filter: blur(5px);
-	-webkit-filter: blur(5px);
 }
 
 #bannerHallowgrove h1 {
 	border: 0;
 	font-size: 5rem;
+	opacity: 0;
+	animation-name: opacidad;
+	animation-delay: 1s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
 #bannerHallowgrove p {
 	font-weight: 700;
 	font-size: 1.5rem;
+	opacity: 0;
+	animation-name: opacidad;
+	animation-delay: 3s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes opacidad {
+	from {opacity: 0;}
+	to {opacity: 1;}
 }
 
 @media only screen and (max-width: 800px) {
@@ -42,22 +55,53 @@ body {
 	}
 
 #intro {
+	width: 60vw;
 	margin-bottom: 20px;
+	display: grid;
+	grid-template-areas: "intro" "faq" "disclaimer";
+	margin: 20px auto;
 }
 
 #introHallowgrove {
+	width: auto;
+	grid-area: intro;
 	background-color: #fff3e5;
 	padding: 20px;
+	border-radius: 20px;
+	p {
+		text-indent: 10px;
+	}
 }
 
 #faqHallowgrove {
-	padding: 10px;
+	width: auto;
+	grid-area: faq;
+	padding: 20px;
+	background-color: white;
+	border: 1px solid $mid-brown;
+	border-radius: 20px;
+	p {
+		text-indent: 10px;
+	}
 }
 
 #disclaimerHallowgrove {
-	background-color: #470101;
+	width: auto;
+	grid-area: disclaimer;
+	color: $cream;
+	background-color: $dark-brown;
 	padding: 20px;
+	border-radius: 20px;
 }
+
+@media only screen and (min-width: 1100px) {
+  #intro {
+    width: 80vw;
+    grid-template-areas: "intro intro faq" "intro intro faq" "disclaimer disclaimer disclaimer";
+    grid-template-rows: auto;
+	}
+}
+
 
 #info p {
 	color: $dark-brown;
@@ -87,45 +131,6 @@ body {
 .portadaImg {
 	height: auto;
 	width: 100%;
-}
-
-#npcs table {
-	color: $dark-brown;
-	font-family: 'Hind Siliguri', sans-serif;
-	font-size: 15px;
-	line-height: 20px;
-	text-align: center;
-	background-color: #FCDCB6;
-	margin: 10px auto 10px auto;
-	width: 80vw;
-
-	td {
-		padding: 5px;
-	}
-
-	b {
-		color: $dark-brown;
-		font-family: 'Hind Siliguri', sans-serif;
-		font-weight: 700;
-		display: block;
-		border: 2px solid $mid-brown;
-	}
-
-	ul {
-		color: $mid-brown;
-		text-align: left;
-		list-style-type: circle;
-	}
-
-	ol {
-		color: #a00c0c;
-		text-align: left;
-		list-style-type: decimal-leading-zero;
-	}
-}
-
-.tablaTitulo {
-	background-color: #fff;
 }
 
 #menu a {
@@ -241,13 +246,14 @@ body {
 }
 
 #unete__juego {
-	width: 300px;
+	min-width: 300px;
 	padding: 1em;
 	margin: 20px;
 	border: 1px solid $mid-brown!important;
 }
 
 #unete__faq {
+	min-width: 300px;
 	padding: 1em;
 }
 
@@ -277,23 +283,9 @@ body {
 
 }
 
-@for $i from 1 through 10 {
-	.columna-#{$i} {
-		width: (80vw/10)*$i;
-		background-color: $cream;
-		display: inline-block;
-		justify-content: center;
-		p {
-			display: inline-block;
-			padding: 10px;
-			width: (80vw/10)*$i!important;
-		}
-	}
-}
-
 @each $t in $towns {
 	.ciudad-#{$t}{
-		background-image: url('../media/#{$t}.png');
+		background-image: url('../media/#{$t}.jpg');
 		background-size: cover;
 		display: block;
 		width: 100%;
@@ -304,19 +296,60 @@ body {
 .towns {
 	max-width: 80vw;
 	margin: 20px auto;
-	display: flex;
+	display: grid;
+	grid-template-areas: "img" "texto";
+	background-color: $cream;
+}
+
+.townsRev {
+	max-width: 80vw;
+	margin: 20px auto;
+	display: grid;
+	grid-template-areas: "img" "texto";
+	background-color: $cream;
+}
+
+.townText p {
+	padding: 10px 20px;
+}
+
+.townImg {
+	grid-area: img;
+	display: block;
+	width: 80vw;
+	height: 500px;
 }
 
 .townInfo {
 	background-color: $dark-brown;
 	padding: 10px 20px 10px 20px;
 	color: white!important;
+	grid-area: texto;
 
 	strong {
 		font-family: Georgia, serif;
 		font-weight: 700;
 		color: #FCDCB6;
 		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width: 1100px)
+{
+	.towns {
+		height: 500px;
+		grid-template-areas: "img texto";
+		grid-template-rows: 2fr 3fr;
+	}
+
+	.townsRev {
+		height: 500px;
+		grid-template-areas: "texto img";
+		grid-template-rows: 2fr 3fr;
+	}
+
+	.townImg {
+		width: 30vw;
 	}
 }
 
@@ -331,19 +364,20 @@ body {
 }
 
 #razas {
-	width: 100vw;
+	width: 90vw;
 	display: flex;
 	flex-flow: row wrap;
 	align-content: space-around;
 	align-items: stretch;
+	margin: auto;
 }
 
 .razasInfo {
-	width: 380px;
+	width: 400px;
 	margin: 25px auto 25px auto;
 
 	.razasNombre {
-		background-color: $dark-brown;
+		background-color: $mid-brown;
 		color: $cream;
 		font-size: 20px;
 		height: 30px;
@@ -356,4 +390,38 @@ body {
 		background-color: $light-brown;
 		padding: 10px;
 	}
+
+  .razasFlex {
+  	display: flex;
+  	justify-content: space-around;
+  	margin: 20px auto 10px auto;
+  }
+
+	.razasPuntos {
+		background-color: $cream;
+		display: block;
+		height: 70px;
+		width: 70px;
+		text-align: center;
+		overflow: hidden;
+
+		span {
+			font-size: 18px;
+			font-weight: 700;
+			margin-top: 0;
+			padding: 0;
+		}
+
+		b {
+			font-size: 25px;
+			font-weight: 700;
+			display: block;
+		}
+	}
+}
+
+.clasesVideo {
+	display: flex;
+	margin: 0;
+	justify-content: center;
 }
